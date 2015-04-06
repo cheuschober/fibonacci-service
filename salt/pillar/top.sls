@@ -3,4 +3,5 @@
 
 base:
   '*':
+    - fibonacci
     - custom
