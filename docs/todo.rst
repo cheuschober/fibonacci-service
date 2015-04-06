@@ -54,4 +54,45 @@ Optional GZip Compression
 GZip compression should be added to the states as an optional (pillar) component
 of the NginX configuration.
 
+Logrotate
+---------
+
+Logrotate needs to be added to the managed formulas.
+
+NTP
+---
+
+NTP needs to be added to the managed formulas.
+
+Log Management
+--------------
+
+A log management tool such as logstash needs to be added to the managed
+formulas.
+
+Monitoring Tool
+---------------
+
+A monitoring tool such as zabbix should be added to the managed formulas.
+
+Gunicorn Worker Status
+----------------------
+
+Gunicorn should be updated to report its worker statuses (consumable by
+monitoring tools).
+
+Test Runner
+-----------
+
+All tests should be combined and executable via a single runner.
+
+Clustering
+----------
+
+Currently, this application may be clustered without complication but any
+scenario involving caches or asynchronous execution may call for adaptations
+to the formula that encourage clustering. This could include both backend
+modifications (eg, redis) as well as intelligent switching which, for the
+purpose of this turnkey, suggests adding HAProxy into the mix.
+
 .. _`redis`: http://redis.io/
