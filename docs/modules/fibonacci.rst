@@ -1,0 +1,5 @@
+fibonacci
+=========
+
+.. automodule:: fibonacci
+    :members:
