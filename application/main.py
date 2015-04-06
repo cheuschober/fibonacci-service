@@ -42,7 +42,7 @@ def fibonacci_api():
 
     Args:
         count (int): The total number of Fibonacci numbers to return. Should
-            be a ``GET`` parameter, eg ``?GET=5`. Required.
+            be a ``GET`` parameter, eg ``?GET=5``\ . Required.
 
     Returns:
         string: A JSON-encoded string containing all Fibonacci numbers, eg::
